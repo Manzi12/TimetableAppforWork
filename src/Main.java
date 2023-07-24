@@ -8,8 +8,10 @@ public class Main {
         while (true){
             System.out.println("1. Add Employee");
             System.out.println("2. Display Employee");
-            System.out.println("3. Exit ");
-            System.out.println("4. Enter your choice");
+            System.out.println("3. Update Employee timetable ");
+            System.out.println("4. View Employee timetable");
+            System.out.println("5. Exit");
+            System.out.println("6. Enter your choice");
 
 
             int choice = Integer.parseInt(scanner.nextLine());
@@ -24,6 +26,14 @@ public class Main {
                     break;
 
                 case 3:
+                    em.updateTimetabele();
+                    break;
+
+                case 4:
+                    em.viewTimetable();
+                    break;
+
+                case 5:
                     System.out.println("Exixting Application..Goodbye");
                     scanner.close();
                     System.exit(0);
